@@ -4,6 +4,9 @@ Business Website Development Assignment - Web Application Module
 The 'business' can be of your choosing (or can be a personal site meeting the requirements
 outlined below). You should employ a common design theme and colour scheme throughout. <br>
 
+For this assignment, you must create a business e-commerce website that employs the principles of
+HTML5, CSS and JavaScript which meets the requirements specified below. <br>
+
 ### Requirements
 Your website should:<br>
 • Allow the user to ‘purchase’* items from the site;<br>

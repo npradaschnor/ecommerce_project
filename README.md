@@ -4,7 +4,7 @@
 
 ### ecommerce Project
 
-#### Business Website Development Assignment
+#### Business Website Development Assignment (<i><b>in progress</i></b>)
 
 The 'business' can be of your choosing (or can be a personal site meeting the requirements
 outlined below). You should employ a common design theme and colour scheme throughout. <br>

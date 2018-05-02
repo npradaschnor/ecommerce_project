@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  
+   <!--Noa P Prada Schnor - Web Application Project May 2018-->
+  
+  <!-- Based on https://bootsnipp.com/snippets/4lW12 -->
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+
+	<!--FOOTER CSS-->
+	<style>
+
+.description{
+  list-style-type: none;
+  margin="auto";
+  position="absolute";
+  justify-content: center;
+  
+}
+
+.description li {
+  float: left;
+  display: inline-block;
+
+  hr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+  </style>
+
+	 <!--FOOTER-->
+	 
+	 <!--BASED ON https://bootsnipp.com/snippets/featured/e-commerce-footer-responsive -->
+	 <link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+	
+	<!--FORM-->
+	<link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+	
+		
+<!--NAVBAR-->
+	
+<nav class="navbar navbar-expand-lg navbar-light">
+  <a class="navbar-brand" href="index.html"><img src="teddybear-logo3.png" title="Teddy Bear" alt="teddyBear" width=25%></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+      <li class="nav-item">
+         <a class="nav-link" href="aboutus.html">About us</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="products.html">Products</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="contactus.html"><span class="glyphicon glyphicon-envelope"></span>Contact us</a>
+      </li>
+    </ul>
+	 <ul class="nav navbar-nav navbar-right">
+	<li><button type="button" class="btn btn-outline-primary btn-sm"><a class="nav-link" href="loginRegister.html"><span class="glyphicon glyphicon-user"></span> Login | Register</a></button></li>&nbsp;&nbsp;
+	<li><button type="button" class="btn btn-outline-primary btn-sm"><a class="nav-link" href="cart.html""><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a></button></li>
+      
+	 
+    </ul>
+</div>
+</nav>
+<!--end of navbar-->
+
+    <title> Teddy Bear | Contact us</title>
+  
+  </head>
+
+  <body>
+  
+  <!--JUMBOTRON-->
+<div class="jumbotron jumbotron-sm">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-lg-12">
+                <h1 class="h1">
+                    Contact us <small>Feel free to contact us</small></h1>
+            </div>
+        </div>
+    </div>
+</div>
+<!--end of jumbotron-->
+
+<!--FORM CONTACT US-->
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-8">
+            <div class="well well-sm">
+                <form>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="name">
+                                Name</label>
+                            <input type="text" class="form-control" id="name" placeholder="Enter name" required="required" />
+                        </div>
+                        <div class="form-group">
+                            <label for="email">
+                                Email Address</label>
+                            <div class="input-group">
+                                <span class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span>
+                                </span>
+                                <input type="email" class="form-control" id="email" placeholder="Enter email" required="required" /></div>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">
+                                Subject</label>
+                            <select id="subject" name="subject" class="form-control" required="required">
+                                <option value="na" selected="">Choose One:</option>
+                                <option value="service">General Customer Service</option>
+                                <option value="suggestions">Suggestions</option>
+                                <option value="product">Product Support</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="name">
+                                Message</label>
+                            <textarea name="message" id="message" class="form-control" rows="9" cols="25" required="required"
+                                placeholder="Message"></textarea>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <button type="submit" class="btn btn-primary pull-right" id="btnContactUs">
+                            Send Message</button> <br><br><br>
+                    </div>
+                </div>
+                </form>
+            </div>
+        </div>
+<!--end of form contact us-->
+
+<!--CONTACT DETAILS--->
+        <div class="col-md-4">
+            <form>
+            <legend><span class="glyphicon glyphicon-globe"></span> Our office</legend>
+            <address>
+                <strong>Teddy Bear</strong><br>
+                12 Suite Ave,<br>
+                Dublin, <br> Ireland<br>
+                <abbr title="Phone">
+                    </abbr>
+                (01) 843 843843
+            </address>
+            <address>
+                <strong>Email</strong><br>
+                <a href="mailto:#">info@teddybear.ie</a>
+            </address>
+            </form>
+        </div>
+    </div>
+</div>
+<!--end of contact details-->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+  </body>
+  
+   <!--FOOTER-->
+<footer class="page-footer"><hr>   
+    				
+				<div class="container">
+					<ul class="description">
+						<div class="row align-items-center justify-content-center">
+							<div class="col">
+								<li><img src="images\securepayment.jpg" width=55% class="img-fluid">
+								</li>
+							</div>
+							<div class="col">
+								<li><img src="images\fastdelivery.jpg" width=55% class="img-fluid">
+								</li>
+							</div>
+							<div class="col">
+								<li><img src="images\easyreturnsandexchanges.jpg" width=55% class="img-fluid">
+								</li>
+							</div>
+							<div class="col">
+								<li><img src="images\satisfaction.jpg" width=55% class="img-fluid">
+								</li>
+							</div>
+						</div> <!---div row-->
+					</ul>
+						<p class="text-center"><small> © 2018 Teddy Bear </small></p>
+				</div><!--div container-->
+</footer>			
+<!--end of footer-->
+
+</html>

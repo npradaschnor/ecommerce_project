@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+
+
+<?PHP
+
+//setting an “authorized” session
+//If user is authorized, we show him the protected content, otherwise we direct him to the login form.
+
+require_once("config.php");
+
+if(!$fgmembersite->CheckLogin())
+{
+    $fgmembersite->RedirectToURL("login.php");
+    exit;
+}
+?>
+
+  <head>
+  
+    <!--Noa P Prada Schnor - Web Application Project May 2018-->
+  
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+	
+	 	<!--FOOTER CSS-->
+	<style>
+
+.description{
+  list-style-type: none;
+  margin="auto";
+  position="absolute";
+  justify-content: center;
+  
+}
+
+.description li {
+  float: left;
+  display: inline-block;
+
+  hr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+  </style>
+		
+<!--NAVBAR-->
+	
+<nav class="navbar navbar-expand-lg navbar-light">
+  <a class="navbar-brand" href="index.html"><img src="teddybear-logo3.png" title="Teddy Bear" alt="teddyBear" width=25%></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+      <li class="nav-item">
+         <a class="nav-link" href="aboutus.html">About us</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="products.html">Products</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="contactus.html"><span class="glyphicon glyphicon-envelope"></span>Contact us</a>
+      </li>
+    </ul>
+	 <ul class="nav navbar-nav navbar-right">
+	<li><button type="button" class="btn btn-outline-primary btn-sm"><a class="nav-link" href="loginRegister.html"><span class="glyphicon glyphicon-user"></span> Login | Register</a></button></li>&nbsp;&nbsp;
+	<li><button type="button" class="btn btn-outline-primary btn-sm"><a class="nav-link" href="cart.html""><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a></button></li>
+      
+	 
+    </ul>
+</div>
+</nav>
+
+	 
+    <title>Teddy Bear Cart</title>
+	
+  </head>
+  <body>
+ 
+ <!--BASED ON http://form.guide/php-form/php-login-form.html-->
+<!--For those pages that can only be accessed by registered members, we need to put a check on the top of the page.
+Notice that we are setting an “authorized” session variable in the login code above. On top of pages we want to protect, we check for that session variable. If user is authorized, we show him the protected content, otherwise we direct him to the login form.-->
+<?PHP
+require_once("./include/membersite_config.php");
+
+if(!$fgmembersite->CheckLogin())
+{
+    $fgmembersite->RedirectToURL("login.php");
+    exit;
+}
+?>
+<!--See the file: access-controlled.php in the downloaded code for an example.-->
+
+
+
+    <h1>Hello, world!</h1>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+  </body>
+  
+   
+  
+   <!--FOOTER-->
+<footer class="page-footer"><hr>   
+    				
+				<div class="container">
+				<ul class="description">
+				<div class="row align-items-center justify-content-center">
+				
+				<div class="col">
+					<li><img src="images\securepayment.jpg" width=55% class="img-fluid">
+					</li>
+					</div>
+					<div class="col">
+					<li><img src="images\fastdelivery.jpg" width=55% class="img-fluid">
+					</li>
+					</div>
+					<div class="col">
+					<li><img src="images\easyreturnsandexchanges.jpg" width=55% class="img-fluid">
+					</li>
+					</div>
+					<div class="col">
+					<li><img src="images\satisfaction.jpg" width=55% class="img-fluid">
+					</li>
+					</div>
+					
+					
+					
+					
+</div>	
+</ul>
+<p class="text-center"><small> © 2018 Teddy Bear </small></p>
+</div>		
+</footer>	
+ 	
+<script>
+
+function CheckLogin()
+{
+     session_start();
+
+     $sessionvar = $this->GetLoginSessionVar();
+     
+     if(empty($_SESSION[$sessionvar]))
+     {
+        return false;
+     }
+     return true;
+}
+
+//These are the basics of creating a membership site. Now that you have the basic knowledge, you can experiment with it and add new features, such as a “Forgot password” page to allow the user to retrieve or change his password if he forgets it.
+</script>
+
+</html>

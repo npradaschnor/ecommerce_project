@@ -4,7 +4,7 @@ Business Website Development Assignment - Web Application Module
 The 'business' can be of your choosing (or can be a personal site meeting the requirements
 outlined below). You should employ a common design theme and colour scheme throughout. <br>
 
-###Requirements
+### Requirements
 Your website should:<br>
 • Allow the user to ‘purchase’* items from the site;<br>
 • Allow the customer to enter their login details and have login details validated (via a login screen)

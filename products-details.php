@@ -6,7 +6,7 @@ include("conn.php");
 if(isset($_GET['id'])) {
 	$id = $_GET['id'];
 	$query_select = "SELECT * FROM products_db WHERE id = $id"; // sql query - products table
-	$select = mysqli_query($conn, $query_select); // Executes the querya a consulta
+	$select = mysqli_query($conn, $query_select); // Executes the query
 	if (mysqli_num_rows($select) > 0) { // Checks if any line returned from query
 		$productArray = mysqli_fetch_assoc($select); // Stores product data in $ productArray variable
 	}else { // If the query did not return anything, it returns an error message

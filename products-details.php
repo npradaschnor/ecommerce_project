@@ -1,5 +1,5 @@
 <?php
-// Inclui o código de conexão com o banco de dados
+// Include connectio to database
 include("conn.php");
 
 //CHECK IF PRODUCT CODE HAS BEEN SENT

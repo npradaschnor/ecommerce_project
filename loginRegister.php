@@ -173,10 +173,8 @@ include("header.php"); //include the header's code
                         <input type="password" id="password" name="password" class="form-control" pattern=".{6,}" title="Six or more characters" placeholder="password" required style="font-family:'Open Sans Condensed', sans-serif;"/><br><!--INFO REQUIRED AND PATTERN OF PASSWORD-->
 						 <!-- Address-->
 						 <!-- Create account button-->
-						 <input type="submit" class="btn btn-primary col-md-4 col-md-offset-10" style="font-family:'Open Sans Condensed', sans-serif;" value="Submit" />
-                          
-                        
-                        </form><!--ed of create account form-->
+						 <input type="submit" class="btn btn-primary col-md-4 col-md-offset-10" style="font-family:'Open Sans Condensed', sans-serif;" value="Submit" />    
+                        </form><!--end of create account form-->
                     </div><!--div tab-pane-->
                 </div><!--div myTabContent-->
               </div><!--div well-->

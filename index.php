@@ -13,8 +13,7 @@ include("head.php"); // inclui o código head
 include("header.php"); //Inclui o código de cabeçalho
 ?>
 
-
-  <!--JUMBOTRON-->
+<!--JUMBOTRON-->
   <div class="jumbotron" id="jumbotronDiv">
    <div class="container-fluid">
         <div class="row align-items-center">
@@ -41,16 +40,16 @@ include("header.php"); //Inclui o código de cabeçalho
 				<div id="myCarousel" class="carousel slide" data-ride="carousel" data-pause="hover">
 					<div class="carousel-inner" role="listbox">
 						<div class="carousel-item active">
-							<a href="products1.html"><img class="d-block img-fluid" title="Sleepy Teddy Bear" src="images\teddy-3094151__340.jpg" width= "600px" alt="First slide"></a>
+							<a href="products.php"><img class="d-block img-fluid" title="Sleepy Teddy Bear" src="images\teddy-3094151__340.jpg" width= "600px" alt="First slide"></a>
 						</div>
 						<div class="carousel-item">
-							<a href="products2.html"><img class="d-block img-fluid" title="Spring Teddy Bear" src="images\teddy-3100391_960_720.jpg" width= "600px"  alt="Second slide"></a>
+							<a href="products.php"><img class="d-block img-fluid" title="Spring Teddy Bear" src="images\teddy-3100391_960_720.jpg" width= "600px"  alt="Second slide"></a>
 						</div>
 						<div class="carousel-item">
-							<a href="products6.html"><img class="d-block img-fluid" title="Brown Teddy Bear with Bow" src="images\teddy-bear-2771252__340.jpg" width= "600px"  alt="Third slide"></a>
+							<a href="products.php"><img class="d-block img-fluid" title="Brown Teddy Bear with Bow" src="images\teddy-bear-2771252__340.jpg" width= "600px"  alt="Third slide"></a>
 						</div>
 						<div class="carousel-item">
-							<a href="products5.html"><img class="d-block img-fluid" title="I love you Teddy Bear" src="images\teddy-1641__340.jpg" width= "600px"  alt="Fourth slide"></a>
+							<a href="products.php"><img class="d-block img-fluid" title="I love you Teddy Bear" src="images\teddy-1641__340.jpg" width= "600px"  alt="Fourth slide"></a>
 						</div>
 	
 					</div> <!--carousel-inner-->
@@ -59,8 +58,7 @@ include("header.php"); //Inclui o código de cabeçalho
 		</div><!--row-->
 	</div><!--container-fluid-->
   
-   
-<?php
+  <?php
 include("footer.php"); //Inclui o código de rodapé
 ?>
 </body>

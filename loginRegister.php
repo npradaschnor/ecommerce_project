@@ -1,7 +1,7 @@
 <?php
-/////////////////////////////////////////////
+
 // Noa Pereira Prada Schnor. Web Applications Assignment May-2018. Sign Up Page.
-/////////////////////////////////////////////
+
 
 $title = "Login & Register"; // Title
 

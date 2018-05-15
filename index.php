@@ -1,19 +1,22 @@
 <?php $title = ''; 
-//INICIALIZA A SESSÃO
+
+//Noa Pereira Prada Schnor - Web Applications Project May 2018
+//Start session
 session_start();
-// session_destroy(); // Descomentar para finalizar a session e conseguir fazer novos testes
+// session_destroy(); // destroy session to be able to start new tests
 ?>
 <!doctype html>
 <html lang="en">
 <?php
-include("head.php"); // inclui o código head
+include("head.php"); // Include head's code
 ?>
 <body>
 <?php
-include("header.php"); //Inclui o código de cabeçalho
+include("header.php"); //Includes header's code
 ?>
 
-<!--JUMBOTRON-->
+
+  <!--JUMBOTRON-->
   <div class="jumbotron" id="jumbotronDiv">
    <div class="container-fluid">
         <div class="row align-items-center">
@@ -58,8 +61,9 @@ include("header.php"); //Inclui o código de cabeçalho
 		</div><!--row-->
 	</div><!--container-fluid-->
   
-  <?php
-include("footer.php"); //Inclui o código de rodapé
+   
+<?php
+include("footer.php"); //Includes footer's code
 ?>
 </body>
 </html>

@@ -71,7 +71,7 @@ include("header.php"); //Include the header's code
 
 
 <?php
-include("footer.php");
+include("footer.php"); //Include footer's code
 mysqli_close($conn); //Close connection to database
 ?>
 </body>

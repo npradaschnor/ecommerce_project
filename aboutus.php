@@ -1,16 +1,20 @@
-<?php $title = 'About us';
-//INICIALIZA A SESSÃO
+<?php 
+//Noa Pereira Prada Schnor - Web Applications Project May 2018
+
+$title = 'About us'; //title
+//Start session
 session_start();
 ?>
 <!doctype html>
 <html lang="en">
 <?php
-include("head.php"); // inclui o código head
+include("head.php"); // Includes head's code
 ?>
 <body>
 <?php
-include("header.php"); //Inclui o código de cabeçalho
+include("header.php"); //Includes header's code
 ?>
+ 
   <!--JUMBOTRON-->
   
  <div class="jumbotron jumbotron-sm">
@@ -40,7 +44,7 @@ include("header.php"); //Inclui o código de cabeçalho
     </div>  <!--div row-->
  </div> <!--div col-->
 <?php
-include("footer.php"); // Inclui o código de rodapé
+include("footer.php"); // Includes footer's code
 ?>
 </body>
 </html>

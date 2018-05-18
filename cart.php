@@ -1,6 +1,8 @@
 <?php
 //Noa Pereira Prada Schnor - Web Applications Project May 2018. Cart Page.
 
+$title = "Cart"; // Title
+
 //Include CONNECTION TO DATABASE
 include("conn.php");
 

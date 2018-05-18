@@ -99,7 +99,7 @@ include("head.php"); // Include head's code
 
 <body>
 
-<!--HEADER---->
+<!--HEADER-->
 <?php
 include("header.php"); //Include header's code
 ?>
